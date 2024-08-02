@@ -1,0 +1,15 @@
+<svg id="Close_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_5031" data-name="Rectangle 5031" width="20" height="20" transform="translate(1008 141)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <path id="Ellipse_451" data-name="Ellipse 451" d="M20,0A20,20,0,1,1,0,20,20,20,0,0,1,20,0Z" fill="#0ca94b"/>
+  <g id="Mask_Group_259" data-name="Mask Group 259" transform="translate(-998 -131)" clip-path="url(#clip-path)">
+    <g id="cancel_7_" data-name="cancel (7)" transform="translate(1008 141)">
+      <g id="Group_14735" data-name="Group 14735">
+        <path id="Path_23873" data-name="Path 23873" d="M12.2,10l7.48-7.478a1.1,1.1,0,0,0,0-1.547L19.025.32a1.1,1.1,0,0,0-1.547,0L10,7.8,2.522.32A1.1,1.1,0,0,0,.976.32L.32.975a1.1,1.1,0,0,0,0,1.547L7.8,10,.32,17.478a1.1,1.1,0,0,0,0,1.547l.655.655a1.1,1.1,0,0,0,1.547,0L10,12.2l7.478,7.478a1.085,1.085,0,0,0,.773.319h0a1.085,1.085,0,0,0,.773-.319l.655-.655a1.1,1.1,0,0,0,0-1.547Z" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

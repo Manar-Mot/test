@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robotics WebSite</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container navbar-container">
+        <a href="#" class="brand-title">
+          <img
+            class="logo"
+            src="./assets/logos/Altkamul Altiqani logo.png"
+            alt="logo"
+          />
+        </a>
+        <div class="toggle-button" onclick="toggleNavbar()">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <div class="overlay">
+          <div class="navbar-links">
+            <div class="close-button" onclick="toggleNavbar()">
+              <img src="./assets/svg/close-list-navbar.svg" alt="close icon " />
+            </div>
+            <ul>
+              <li class="selected"><a href="#">Home</a></li>
+              <li><a href="#">Case-Studies</a></li>
+              <li><a href="#">Partners & Awards</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===============Hero Section ========================= -->
+
+    <header class="hero-section">
+      <video class="background-video" autoplay muted loop>
+        <source src="./assets/Home/Banner Video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="overlay">
+        <div class="container to-center-overlay-content">
+          <div class="overlay-content">
+            <h1>Innovative AI Human-Centric Robotic Solutions</h1>
+            <button>Explore More</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- =========================Service-robots===================== -->
+    <div class="container service-robots-section">
+      <img
+        src="./assets/Home/World Map.png"
+        alt="world map"
+        class="world-map"
+      />
+      <h2>
+        We are a leading provider of service robots in the UAE, offering
+        innovative and reliable solutions.
+      </h2>
+
+      <div class="digits">
+        <div class="digit-container">
+          <div class="digit">4+</div>
+          <div class="text">Robots</div>
+        </div>
+        <div class="digit-container">
+          <div class="digit">3+</div>
+          <div class="text">Countries</div>
+        </div>
+
+        <div class="digit-container">
+          <div class="digit">25+</div>
+          <div class="text">Events Conducted</div>
+        </div>
+
+        <div class="digit-container">
+          <div class="digit">4+</div>
+          <div class="text">No. of Robots</div>
+        </div>
+
+        <div class="digit-container">
+          <div class="digit">4+</div>
+          <div class="text">No. of Robots</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================Rent or Purchase Delivery Robots ================= -->
+    <div class="container rent-or-purchase-section">
+      <h2 class="title-section">
+        Rent or Purchase Delivery Robots and Event Robots.
+      </h2>
+      <div class="tabs">
+        <button class="tablink" onclick="openTab(event, 'Tab1')">Tab 1</button>
+        <button class="tablink" onclick="openTab(event, 'Tab2')">Tab 2</button>
+        <button class="tablink" onclick="openTab(event, 'Tab3')">Tab 3</button>
+        <button class="tablink" onclick="openTab(event, 'Tab4')">Tab 4</button>
+      </div>
+      <div class=" container images-tabs-container">
+        <div id="Tab1" class="tabcontent">
+          
+          <img
+            src="./assets/Home/Rent or Purchase Delivery Robots and/Lucki Pro.png"
+            alt="Lucki Pro"
+            class="tabimage"
+          />
+        </div>
+
+        <div id="Tab2" class="tabcontent">
+          <img
+            src="./assets/Home/Rent or Purchase Delivery Robots and/Lucki.png"
+            alt="Lucki"
+            class="tabimage"
+          />
+        </div>
+
+        <div id="Tab3" class="tabcontent" a>
+          <img
+            src="./assets/Home/Rent or Purchase Delivery Robots and/Mini.png"
+            alt="Mini"
+            class="tabimage"
+          />
+        </div>
+
+        <div id="Tab4" class="tabcontent">
+          <img
+            src="./assets/Home/Rent or Purchase Delivery Robots and/Pepper.png"
+            alt="Pepper"
+            class="tabimage"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
