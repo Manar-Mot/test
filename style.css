@@ -466,10 +466,10 @@ body {
 .images-tabs-container {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 10px;
 }
 .tabcontent {
-  width: 16%;
+  width: 21%;
   display: inline-block;
   transition: width 0.3s ease;
 }
@@ -477,21 +477,18 @@ body {
 .tabimage {
   width: 100%;
   border-radius: 24px;
-  height: 70vh;
+  height: 250px;
   object-fit: cover;
   object-position: 60%;
-
 }
 .tabcontent:nth-child(2) .tabimage {
-
-    object-position:35%;
+  object-position: 35%;
 }
 .tabcontent:nth-child(3) .tabimage {
-
-    object-position:65%;
+  object-position: 65%;
 }
 .tabcontent.active {
-  width: 72%;
+  width: 37%;
   /* transform: scaleX(1.8); */
 }
 
