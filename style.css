@@ -22,7 +22,7 @@ body {
 /* =============Containers Styles============ */
 .container {
   width: 100%;
-  padding: 0 20px;
+  padding: 0 10px;
   margin: 0 auto;
 }
 .section-container {
@@ -442,9 +442,6 @@ body {
   text-align: center;
   margin: 0 auto;
 }
-.tabs-layout {
-  display: flex;
-}
 .tabs {
   overflow: hidden;
   width: fit-content;
@@ -453,21 +450,20 @@ body {
   justify-content: center;
   gap: 0px;
   border-radius: 96px;
-  margin: 20px auto;
+  margin: 32px auto;
   padding: 4px 10px;
   background-color: var(--light-gray);
- 
 }
 
 .tablink {
-background-color: transparent;
+  background-color: transparent;
   border: none;
   outline: none;
   cursor: pointer;
   padding: 10px 10px;
   border-radius: 24px;
   transition: 0.3s;
-  font-size: 16px;
+  font-size: 14px;
   transition: all 0.3s linear;
 }
 
@@ -504,11 +500,37 @@ background-color: transparent;
   width: 37%;
   /* transform: scaleX(1.8); */
 }
+@media (min-width: 640px) {
+  .tablink {
+    padding: 10px 14px;
+    font-size: 16px;
+  }
+  .tabs {
+    gap: 10px;
+  }
+  .tabimage {
+    height: 350px;
+  }
+}
+@media (min-width: 768px) {
+}
 
 @media (min-width: 1024px) {
   .title-section {
     font-size: 32px;
     max-width: 70%;
+  }
+  .tabs {
+    gap: 20px;
+  margin: 64px auto;
+
+  }
+  .tablink {
+    padding: 10px 16px;
+    font-size: 18px;
+  }
+  .tabimage {
+    height: 450px;
   }
 }
 
@@ -516,11 +538,24 @@ background-color: transparent;
   .title-section {
     font-size: 36px;
   }
+  
 }
 
 @media (min-width: 1536px) {
   .title-section {
     font-size: 40px;
     max-width: 60%;
+  }
+  
+  .tabs {
+    gap: 40px;
+  }
+  .tablink {
+    padding: 10px 20px;
+    font-size: 20px;
+
+  }
+  .tabimage {
+    height: 650px;
   }
 }
