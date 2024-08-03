@@ -19,6 +19,12 @@
 body {
   font-size: 16px;
 }
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
 /* =============Containers Styles============ */
 .container {
   width: 100%;
@@ -436,10 +442,13 @@ body {
   background-color: #fff;
   padding: 64px 0;
 }
-.title-section {
-  font-size: 20px;
-  max-width: 80%;
+.rent-or-purchase-section h2 {
+  max-width: 90%;
   text-align: center;
+}
+.title-section {
+  font-size: 24px;
+
   margin: 0 auto;
 }
 .tabs {
@@ -511,19 +520,23 @@ body {
   .tabimage {
     height: 350px;
   }
+  .title-section {
+    font-size: 32px;
+  }
 }
 @media (min-width: 768px) {
 }
 
 @media (min-width: 1024px) {
+  .rent-or-purchase-section h2 {
+    max-width: 70%;
+  }
   .title-section {
     font-size: 32px;
-    max-width: 70%;
   }
   .tabs {
     gap: 20px;
-  margin: 64px auto;
-
+    margin: 64px auto;
   }
   .tablink {
     padding: 10px 16px;
@@ -538,24 +551,291 @@ body {
   .title-section {
     font-size: 36px;
   }
-  
 }
 
 @media (min-width: 1536px) {
-  .title-section {
-    font-size: 40px;
+  .rent-or-purchase-section h2 {
     max-width: 60%;
   }
-  
+  .title-section {
+    font-size: 40px;
+  }
+
   .tabs {
     gap: 40px;
   }
   .tablink {
     padding: 10px 20px;
     font-size: 20px;
-
   }
   .tabimage {
     height: 650px;
   }
+}
+/* ========================================Advanced Robotics Redefining=================================== */
+.advanced-robotics-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 32px 10px;
+}
+.advanced-robotics-container .comp {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.advanced-robotics-container h2 {
+  color: white;
+  margin-bottom: 20px;
+  max-width: 80%;
+  text-align: center;
+  margin: 10px auto;
+  margin-bottom: 20px;
+}
+.robot-card {
+  background-color: #181823;
+  border-radius: 24px;
+  position: relative;
+}
+.robot-image-container {
+  width: 100%;
+  border-radius: 24px;
+  border-radius: 24px 24px 0px 0px;
+  height: 320px;
+  padding: 10px;
+  background-color: white;
+}
+.robot-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 24px 24px 0px 0px;
+}
+.robot-card-content {
+  padding: 20px;
+}
+.robot-card-title {
+  color: var(--accent-color);
+  font-size: 20px;
+  margin: 10px 0;
+}
+.robot-card-subtitle {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.robot-card p,
+.robot-card span {
+  color: #747474;
+}
+.robot-feature-item img {
+  width: 20px;
+  height: auto;
+  object-fit: cover;
+}
+.robot-card ul {
+  margin-top: 24px;
+}
+.robot-feature-item {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.arrow-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 24px 0px;
+  outline: none;
+  border: none;
+  background-color: var(--accent-color);
+  cursor: pointer;
+  padding: 10px;
+}
+.arrow-btn img {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  transition: all 0.3s linear;
+}
+.arrow-btn:hover img {
+  transform: rotate(45deg);
+}
+@media (min-width: 640px) {
+}
+
+@media (min-width: 768px) {
+  .advanced-robotics-container .comp {
+    width: 48%;
+  }
+  .advanced-robotics-container h2 {
+    text-align: start;
+    margin: 10px 0;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .advanced-robotics-container {
+    padding: 64px 0;
+  }
+  .robot-card-title {
+    font-size: 28px;
+  }
+  .robot-card-subtitle {
+    font-size: 20px;
+  }
+  .robot-feature-item {
+    margin: 20px 0;
+  }
+
+  .advanced-robotics-container h2 {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1280px) {
+}
+
+@media (min-width: 1536px) {
+  .robot-card-title {
+    font-size: 32px;
+  }
+  .robot-card-subtitle {
+    font-size: 24px;
+  }
+  .robot-image-container {
+    height: 600px;
+  }
+  .robot-feature-item {
+    margin: 30px 0;
+  }
+  .robot-card p,
+  .robot-card span {
+    font-size: 18px;
+  }
+}
+
+/* ============================== */
+.global-style-scenarios-container {
+  background-color: var(--secondary-color);
+  width: 100%;
+  border-top: 20px solid #181823;
+  position: relative;
+}
+
+.mini-body-image {
+  display: none;
+}
+.scenarios-cards-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 20px;
+}
+.scenarios-card > img {
+  width: 100%;
+}
+.scenarios-container {
+  padding: 32px 0;
+}
+.scenarios-container h2 {
+  color: white;
+  text-align: center;
+  max-width: 90%;
+}
+.scenarios-cards-container {
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.scenarios-card button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-color: white;
+  font-size: 16px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  justify-content: center;
+  padding: 20px 0;
+  border-radius: 0 0 20px 20px;
+  transition: all 0.3s linear;
+}
+.scenarios-card button rect,
+.scenarios-card button path {
+  transition: all 0.3s linear;
+
+}
+.scenarios-card button:hover rect,
+.scenarios-card button:hover path {
+  transition: all 0.3s linear;
+  fill: #0ca94b !important;
+}
+.scenarios-card button:hover {
+  color: var(--accent-color);
+}
+.scenarios-card button > svg {
+  width: 14px;
+  height: 14px;
+  object-fit: cover;
+}
+
+.scenarios-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+.scenarios-card {
+  width: 45%;
+}
+@media (min-width: 640px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+  .scenarios-cards-container {
+    gap: 48px 0;
+    justify-content: space-between;
+  }
+  .scenarios-cards-container {
+    margin-top: 64px;
+  }
+  .scenarios-container {
+    padding: 64px 0;
+  }
+  .mini-body-image {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 16.25%;
+    height: 100%;
+  }
+  .scenarios-content {
+    margin: 0 auto;
+    width: 56%;
+  }
+  .scenarios-card {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1280px) {
+}
+
+@media (min-width: 1536px) {
 }
